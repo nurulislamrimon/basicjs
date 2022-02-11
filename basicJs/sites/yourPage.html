@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction and Balance</title>
+    <!-- tailwindcss link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class=" w-3/4 mx-auto">
+        <h1 class="text-5xl text-center my-5">Welcome sir! Your initial deposit 1200$</h1>
+        <div class="grid grid-cols-3 my-5 gap-4 text-white">
+            <div class="bg-yellow-600 p-8 text-center">
+                <h2 class="text-2xl">Deposit</h2>
+                <h1 class="text-5xl"> <span id="exist-deposit">00</span>$</h1>
+            </div>
+            <div class="bg-red-600 p-8 text-center">
+                <h2 class="text-2xl">Withdraw</h2>
+                <h1 class="text-5xl"><span id="exist-withdraw">00</span>$</h1>
+            </div>
+            <div class="bg-green-600 p-8 text-center">
+                <h2 class="text-2xl">Balance</h2>
+                <h1 class="text-5xl"><span id="exist-balance">1200</span>$</h1>
+            </div>
+        </div>
+        <!-- second row -->
+        <div class="grid grid-cols-2 gap-5">
+            <div class="bg-yellow-100 p-8">
+                <h2 class="text-2xl">Deposit here</h2>
+                <input class="my-2 p-2" type="text" id="deposit-input" placeholder="$ you want to deposit">
+                <button class="p-3 my-2 border-2 border-blue text-xl bg-gray-100" id="deposit-button">Deposit</button>
+            </div>
+
+            <div class="bg-red-100 p-8">
+                <h2 class="text-2xl">Withdraw here</h2>
+                <input class="my-2 p-2" type="text" id="withdraw-input" placeholder="$ you want to withdraw">
+                <button class="p-3 my-2 border-2 border-blue text-xl bg-gray-100" id="withdraw-button">Withdraw</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="transaction.js"></script>
+</body>
+
+</html>

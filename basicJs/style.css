@@ -1,0 +1,16 @@
+button{
+    padding: 1% 2%;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    margin: 10px 20px;
+    outline: 0;
+    border-radius: 30px;
+    box-shadow: inset white -2px -2px 12px 1px,white -2px -2px 5px 1px;
+}
+button:hover{
+    box-shadow: inset white 2px 2px 12px 1px, white 2px 2px 5px 1px;
+}
+button:disabled{
+    background-color: whitesmoke;
+}

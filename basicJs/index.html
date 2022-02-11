@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Event listener</h1>
+    <button onclick="document.body.style.backgroundColor='red'">Red Button</button>
+
+
+    <button onclick="blueFunction()">Blue Button</button>
+
+    <button id="greenButton">Green Button</button>
+
+    <button id="pinkButton">Pink Button</button>
+
+    <button id="oliveButton">Pink Button</button>
+
+    <button id="grayButton">Gray Button</button>
+
+    <button id="defaultButton">Default Button</button>
+
+    <h1>Clicking Method</h1>
+    <p id="para"></p>
+    <button id="textAddingButton">Click to add text</button>
+
+    <button id="textChangingButton">Click to change text</button>
+
+    <h1>Input text Writer</h1>
+    <div id="commentContainer">
+        <p></p>
+    </div>
+    <input id="inputText" type="text">
+    <button id="textButton">Submit</button>
+
+    <h1>Active a button with authentication</h1>
+    <h4 id="deletedText">Delete me! by Clicking Delete button.</h4>
+    <input type="text" id="authenInput" placeholder="Write 'delete' to active button">
+    <button id="disabledButton" disabled>Delete</button>
+
+    <h1>Bubble</h1>
+    <h4>open console for check button function</h4>
+    <section id="bubbleMainContainer">
+        <div id="bubbleSecondContainer">
+            <button class="bubble-btn">I have 2 Ancestor</button>
+        </div>
+        <button class="bubble-btn">I have 1 Ancestor</button>
+    </section>
+    <div>
+        <button class="bubble-btn">I don't have Ancestor</button>
+    </div>
+
+    <h1>Delegate</h1>
+    <ul id="delegateContainer">
+        <li class="delegateItem">Lorem, ipsum.</li>
+        <li class="delegateItem">Lorem, ipsum.</li>
+        <li class="delegateItem">Lorem, ipsum.</li>
+        <li class="delegateItem">Lorem, ipsum.</li>
+        <li class="delegateItem">Lorem, ipsum.</li>
+    </ul>
+    <button id="delegateAddItemBtn">Add item +</button>
+
+    <!-- Login -->
+    <h1>Welcome! to Baap Er Bank.
+    </h1>
+    <!-- form section -->
+    <section>
+        <h2>Login Please</h2>
+        <div>
+            <div id="parentForWarning">
+                <p>nurulislamrimon@gmail.com</p>
+                <div id="parentForWarningOfEmailInput">
+                    <input type="text" name="" placeholder="nurulislamrimon@gmail.com" id="user-email">
+                </div>
+                <p>123</p>
+                <div id="parentForWarningOfPasswordInput">
+                    <input type="password" name="" placeholder="123" id="user-password">
+                </div>
+            </div>
+            <button type="submit" id="user-info-submit-btn">Submit</button>
+        </div>
+    </section>
+
+    <!-- 
+    <script>
+    </script> -->
+
+    <script src="basic.js"></script>
+
+
+</body>
+
+</html>
